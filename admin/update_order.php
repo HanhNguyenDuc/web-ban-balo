@@ -2,6 +2,7 @@
 	include_once("../model/OrderModel.php");
     // include_once("../model/OrderDetailModel.php");
     include_once("../model/UserModel.php");
+    include_once("controller/send_mail.php");
 
 	class Ctrl_Order{
 		public function invoke(){
@@ -85,6 +86,12 @@
                     $add_notify = mysqli_query($conn, $sqlupdate);
                     }
                 }
+                $subject = "Shop Online của Hạnh thông báo";
+                $body = 'Trạng thái đơn hàng ' . $order_detail['code'] . ' của bạn đã được thay đổi.';
+                if (isset($order['email'])) {
+                    sendMail($order['email'], $body, $subject);
+                }
+                include_once("add_order_temp.php");
                 include_once("update_order_temp.php");
 			
 		}

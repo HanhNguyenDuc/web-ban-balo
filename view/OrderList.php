@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Danh sách đơn hàng</title>
+    <link rel="shortcut icon" href="../statics/icons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../statics/css/bill-element.css">
     <link rel="stylesheet" href="../statics/css/index.css">
@@ -67,7 +69,7 @@
                             <p>Họ và tên: <strong>Nguyễn Đức Hạnh</strong></p>
                             <p>Địa chỉ giao hàng: <strong>Số 03 khu 103 Hàng Dưa, Hà Cầu, Hà Đông Hà Nội</strong></p>
                             <p>Số điện thoại liên hệ: <strong>0387697599</strong></p>
-                            <i class="fa fa-pencil" style="text-decoration: underline;"> Chỉnh sửa thông tin</i>
+                            <a href="/LT-Web/page/logout.php"><i class="fa fa-pencil" style="text-decoration: underline;">Đăng xuất</i></a>
                         </div>
                     </div>
                 </div>

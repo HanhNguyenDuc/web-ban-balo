@@ -20,7 +20,7 @@ if (isset($_POST['email'])) {
 		header('Location: /LT-Web/page/order_list.php');
 	} else {
 		// header('Location: /LT-Web/login/index.php');
-		$status = "Wrong username or password";
+		$status = "Sai tên đăng nhập hoặc mật khẩu";
 	}
 }
 
@@ -64,7 +64,7 @@ if (isset($_POST['email'])) {
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" method="POST">
 					<span class="login100-form-title p-b-43">
-						Login to continue
+						Đăng nhập để tiếp tục
 					</span>
 
 
@@ -78,20 +78,20 @@ if (isset($_POST['email'])) {
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<input class="input100" type="password" name="password">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
+						<span class="label-input100">Mật khẩu</span>
 					</div>
 
 					<div class="flex-sb-m w-full p-t-3 p-b-32">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 							<label class="label-checkbox100" for="ckb1">
-								Remember me
+								Nhớ mật khẩu
 							</label>
 						</div>
 
 						<div>
 							<a href="#" class="txt1">
-								Forgot Password?
+								Quên mật khẩu?
 							</a>
 						</div>
 					</div>
@@ -99,20 +99,20 @@ if (isset($_POST['email'])) {
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit">
-							Login
+							Đăng nhập
 						</button>
 					</div>
 
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							or sign up using
+							hoặc đăng ký
 						</span>
 					</div>
 
 					<?php
 					// echo "fahuifhaidufhaiudfhiaudfhuiqheuifhaiudfhda";
 					if (!is_null($status)) {
-					?><div class="text-center p-t-46 p-b-20">
+					?><div class="text-center p-t-46 p-b-20" style="color: red;">
 							<span class="txt2">
 								<?php
 								echo $status;

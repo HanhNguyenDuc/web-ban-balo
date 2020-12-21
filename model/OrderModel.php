@@ -47,6 +47,23 @@
 			return null;
 		}
 
+		public function getOrderById($order_id){
+			$sql = "select * from orders where id='{$order_id}'";
+
+			if ($this->conn){
+				$result = mysqli_query($this->conn, $sql);
+				if ($result){
+					$result_list = array();
+					while ($row=mysqli_fetch_assoc($result)){
+						array_push($result_list, $row);
+					}
+					return $result_list;
+				}
+				return null;
+			}
+			return null;
+		}
+
 		public function getOrderByUserId($id){
 			if ($id == null){
 				$id = 3;

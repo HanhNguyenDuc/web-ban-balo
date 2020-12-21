@@ -4,7 +4,8 @@
     include_once("../model/UserModel.php");
     include_once("../model/ProductModel.php");
     include_once("../model/OrderDetailModel.php");
-
+    include_once("controller/send_mail.php");
+    
 	class Ctrl_Order{
 		public function invoke(){
             $productModel = new ProductModel();
@@ -63,6 +64,11 @@
                 }
 
                 $updateStatus = "Success";
+                $subject = "Shop Online của Hạnh thông báo";
+                $body = 'Đơn hàng ' . $code . ' của bạn đã được shop tạo. Cảm ơn bạn đã mua hàng của shop';
+                if (isset($order['email'])) {
+                    sendMail($order['email'], $body, $subject);
+                }
                 include_once("add_order_temp.php");
 			}
 			else{

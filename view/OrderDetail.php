@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Đơn hàng chi tiết</title>
+    <link rel="shortcut icon" href="../statics/icons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../statics/css/bill-element.css">
     <link rel="stylesheet" href="../statics/css/index.css">
