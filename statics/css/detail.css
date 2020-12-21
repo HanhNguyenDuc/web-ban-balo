@@ -1,0 +1,63 @@
+.content-header__code-number{
+    font-weight: bold;
+}
+
+.content-header__code-title{
+    padding-right: 10px;
+}
+
+.detail-content-col{
+    text-align: right;
+    border-right-style: dotted;
+    border-bottom: dotted;
+    padding: 10px;
+}
+
+.detail-content-col2{
+    text-align: right;
+    border-right-style: dotted;
+    border-bottom: dotted;
+    border-color: black;
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.detail-content__delete{
+    color: red;
+    text-align: right;
+    float: right;
+    padding-top: 50px;
+}
+
+.detail-content__delete:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.detail-content__deactivate{
+    color: red;
+    /* text-align: right; */
+    float: right;
+    padding-top: 50px;
+}
+
+.detail-content__deactivate:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+.content-content__name{
+    font-size: 18px;
+}
+
+.content-content__phone-number{
+    font-style: italic;
+}
+
+.content-content__address{
+    font-weight: bold;
+    font-size: 18px;
+}
+

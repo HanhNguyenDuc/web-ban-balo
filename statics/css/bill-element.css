@@ -1,0 +1,64 @@
+.bill-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-header__list-icon{
+    display: flex;
+}
+
+.bill-header__item{
+    padding: 0px 10px 0px 10px;
+}
+
+.bill-header__icon{
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+}
+
+.bill-header__dropdown-icon:hover{
+    color: gray;
+    transition: 250ms;
+}
+
+.bill-header:hover .bill-content{
+    display: inline-block;
+}
+
+/* .bill-content-visible{
+    display: block;
+    opacity: 0;
+    transition: display 0s linear 300ms, opacity 300ms;
+} */
+
+.bill-content-invisible{
+    display: none;
+    opacity: 1;
+    transition: display 0s linear 0s, opacity 300ms;
+}
+
+
+.bill-content__summary{
+    margin-top: 10px;
+}
+
+.bill-content__summary-label{
+    font-weight: bold;
+}
+
+.bill-content__summary-price{
+    font-weight: bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.bill-content__summary-currency{
+    margin-bottom: 2px;
+    font-weight: bolder;
+    color: red;
+}
+
+.bill-content__summary-detail{
+    float: right;
+}
