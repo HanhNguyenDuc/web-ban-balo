@@ -164,9 +164,11 @@
                             <div class="col-md-4 detail-content-col">Thanh toán khi nhận hàng</div>
                         </div>
                     </div>
-                    <div class="container" style="padding-top: 10px">
-                        <a class="detail-content__deactivate row" href="#">Hủy đơn hàng</a>
-                    </div>
+                    
+                    <form action="/LT-Web/page/export_excel.php" method="post">
+                        <input type="text" name="order_id" value="<?php echo $order['code']?>" hidden>
+                        <button class="btn btn-primary" type="submit" style="float: right; margin-top:50px; margin-bottom: 50px;">Xuất hóa đơn</button>
+                    </form>
                 </div>
             </div>
         </div>
