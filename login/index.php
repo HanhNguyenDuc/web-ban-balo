@@ -1,8 +1,10 @@
 <?php
 include_once("../model/UserModel.php");
-// if (session_id() === null){
+// echo 
 session_start();
-// }
+if (isset($_SESSION['user_id'])){
+	header('Location: /LT-Web/page/order_list.php');
+}
 $status = null;
 $userModel = new UserModel();
 if (isset($_POST['email'])) {
@@ -15,7 +17,7 @@ if (isset($_POST['email'])) {
 	if (!is_null($true_result)) {
 		// var_dump($result_list);
 		$_SESSION['user_id'] = $true_result['id'];
-		header('Location: /LT-Web/controller/OrderListController.php');
+		header('Location: /LT-Web/page/order_list.php');
 	} else {
 		// header('Location: /LT-Web/login/index.php');
 		$status = "Wrong username or password";

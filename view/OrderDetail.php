@@ -81,7 +81,7 @@
                     <hr>
                     <div class="content-header container d-flex justify-content-between">
                         <div class="">
-                            <i class="fa fa-angle-left"> <a class="no-style-tag" href="/LT-Web/controller/OrderListController.php">Trở về</a></i>
+                            <i class="fa fa-angle-left"> <a class="no-style-tag" href="/LT-Web/page/order_list.php">Trở về</a></i>
                         </div>
                         <div class="row">
                             <p class="content-header__code-title">Mã đơn hàng:</p>

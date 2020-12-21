@@ -184,7 +184,7 @@
                                                     </div>
 
                                                     <div class="bill-content__summary-detail col-md-3"><a href="<?php 
-                                                        echo "/LT-Web/controller/OrderDetailController.php?orderId=".$order["code"]
+                                                        echo "/LT-Web/page/order_detail.php?orderId=".$order["code"]
                                                     ?>" class="btn btn-light">Xem
                                                             chi tiết đơn</a></div>
                                                 </div>

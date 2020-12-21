@@ -1,6 +1,13 @@
 <?php 
+	session_start();
+	if (!isset($_SESSION['user_id'])){
+		header("Location: /LT-Web/login/");
+	}
+	
 	include_once("../model/OrderModel.php");
 	include_once("../model/OrderDetailModel.php");
+
+
 
 	class Ctrl_Order{
 		public function invoke(){

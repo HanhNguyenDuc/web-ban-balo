@@ -1,6 +1,9 @@
 <?php 
-	if (session_id() === ''){
-		session_start();
+	
+	session_start();
+	// var_dump($_SESSION);
+	if (!isset($_SESSION['user_id'])){
+		header("Location: /LT-Web/login/");
 	}
 	include_once("../model/OrderModel.php");
 	include_once("../model/OrderDetailModel.php");
